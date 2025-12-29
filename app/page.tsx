@@ -1,5 +1,9 @@
 // import Image from "next/image";
 
+import Counter from "@/components/Counter";
+import ProfileCard from "@/components/ProfileCard";
+import Section from "@/components/Section";
+
 // export default function Home() {
 //   return (
 //     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -69,16 +73,27 @@ export default function Home()
 {
   return (
     <main className="p-10">
-      <h1 className="text-3xl font-bold">
-        Minh's Portfolio
-      </h1>
+      <Section 
+        title="About me"
+        content="I am learning Next.js from scratch."
+      />
+      <Section 
+        title="My Goal"
+        content="Build a personal portfolio with blog."
+      />
 
-      <p className="mt-4">
-        Welcome to my Website.
-      </p>
-      <p className="mt-4">
-        This is the place where you can post whatever you want!
-      </p>
+      <ProfileCard 
+        name="Nguyễn Đình Anh Minh"
+        role="student"
+        goal="Being top 1 in IT"
+      />
+      <ProfileCard 
+        name="Nguyễn Đỗ Thu Ngân"
+        role="student"
+        goal="Being top 1 in Biology"
+      />
+
+      <Counter></Counter>
     </main>
   )
 }
