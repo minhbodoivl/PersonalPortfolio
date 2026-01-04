@@ -1,9 +1,5 @@
 // import Image from "next/image";
 
-import Counter from "@/components/Counter";
-import ProfileCard from "@/components/ProfileCard";
-import Section from "@/components/Section";
-
 // export default function Home() {
 //   return (
 //     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -68,6 +64,10 @@ import Section from "@/components/Section";
 //   );
 // }
 
+import BlogList from "@/components/BlogList";
+import Counter from "@/components/Counter";
+import ProfileCard from "@/components/ProfileCard";
+import Section from "@/components/Section";
 
 export default function Home()
 {
@@ -94,6 +94,8 @@ export default function Home()
       />
 
       <Counter></Counter>
+      <BlogList></BlogList>
+
     </main>
   )
 }
