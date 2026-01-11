@@ -73,26 +73,9 @@ export default function Home()
 {
   return (
     <main className="p-10">
-      <Section 
-        title="About me"
-        content="I am learning Next.js from scratch."
-      />
-      <Section 
-        title="My Goal"
-        content="Build a personal portfolio with blog."
-      />
-
-      <ProfileCard 
-        name="Nguyễn Đình Anh Minh"
-        role="student"
-        goal="Being top 1 in IT"
-      />
-      <ProfileCard 
-        name="Nguyễn Đỗ Thu Ngân"
-        role="student"
-        goal="Being top 1 in Biology"
-      />
-
+      <p>
+        Đây là chỗ bấm đếm số (chỉ để cho vui)
+      </p>
       <Counter></Counter>
       <BlogList></BlogList>
 
